@@ -1,0 +1,3 @@
+[submodule "hello/svg"]
+	path = hello/svg
+	url = https://github.com/oudream/hello-svg
