@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#"
+onload="DrawCircle();">
+
+<script>
+function DrawCircle()
+{
+	var tEqp1 = document.getElementById("Q521JDB203");
+	var sx = tEqp1.getAttribute("x");
+	var sy = tEqp1.getAttribute("y");
+	var nx = parseInt(sx);
+	var ny = parseInt(sy);
+	var nAngle = 0
+	
+	window.timer = window.setInterval(
+		//return;
+		function()
+		{
+			nAngle += 5;
+			if (nAngle >= 100)
+			{
+				window.clearInterval(window.timer);
+			}
+			else
+			{
+				var sAngle = nAngle.toString();
+				
+				//var sProp = "rotate(" + sAngle + "deg, " + sx + ", " + sy + ")";				
+				//tEqp1.style.transform = sProp;				
+				//tEqp1.style.transform-origin = "center";
+				
+				tEqp1.style.transform = 'rotate(' + sAngle + 'deg 10px 10px)';   
+				
+				//tEqp1.style.transform = 'rotate(' + sAngle + 'deg) | transform-origin:50%,50%'; 
+				
+				//$("Q521JDB203").css({transform:"rotate(" + sAngle + "deg)"})
+				 
+				 //tEqp1.css({transform:"rotate(" + sAngle + "deg)"})
+								
+				//window.alert(sProp);				
+				//tEqp1.setAttribute("transform", sProp);
+			}
+		},
+		1000)
+}
+</script>
+
+<symbol id="sym01" viewBox="0 0 150 110">
+	<circle cx="50" cy="50" r="40" stroke-width="8" stroke="red" fill="red"/>
+	<circle cx="90" cy="60" r="40" stroke-width="8" stroke="#5500ff" fill="white"/>
+</symbol>
+
+<!-- actual drawing by "use" element -->
+<circle id="Q521JDB201" cx="150" cy="500" r="40" stroke-width="8" stroke="#5500ff" fill="#5500ff"/>
+
+<g id="Q521JDB202">
+<use xlink:href="#sym01" x="150" y="50" width="100" height="50"/>
+</g>
+
+<g id="Q521JDB203">
+<use xlink:href="#sym01" x="150" y="60" width="100" height="50" transform-origin = "center"/>
+</g>
+
+<g id="Q521JDB204">
+<use xlink:href="#sym01" x="150" y="150" width="75" height="38"/>
+</g>
+
+<g id="Q521JDB205">   
+<use xlink:href="#sym01" x="150" y="250" width="50" height="25"/>
+</g> 
+
+<rect id="Q521JDB206" x="250.004" y="6.33333" width="120.992" height="48" 					   
+stroke="#C0C0C0" stroke-width="1" fill="#E0E0E0"/>
+
+
+ 
+</svg>
+
+
+
+
+
+
+

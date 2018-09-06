@@ -1,0 +1,181 @@
+a
+
+大家都好
+
+select * from omc_alarmrec where status=1;
+
+show tables;
+
+select count(*) from omc_alarmrec_20171202 where status=1;
+93288
+
+
+select distinct(NeID) from omc_alarmrec_20171202;
+
+
+select count(*) from omc_alarmrec_20171202 where neid=262149;
+select count(*) from omc_alarmrec_20171202 where neid=262172;
+select count(*) from omc_alarmrec_20171202 where neid=5308417;
+select count(*) from omc_alarmrec_20171202 where neid=262169;
+select count(*) from omc_alarmrec_20171202 where neid=262162;
+select count(*) from omc_alarmrec_20171202 where neid=262171;
+select count(*) from omc_alarmrec_20171202 where neid=262170;
+select count(*) from omc_alarmrec_20171202 where neid=262163;
+select count(*) from omc_alarmrec_20171202 where neid=3019898881;
+select count(*) from omc_alarmrec_20171202 where neid=2701131778;
+select count(*) from omc_alarmrec_20171202 where neid=2197815297;
+select count(*) from omc_alarmrec_20171202 where neid=2214592513;
+select count(*) from omc_alarmrec_20171202 where neid=262145;
+select count(*) from omc_alarmrec_20171202 where neid=262161;
+select count(*) from omc_alarmrec_20171202 where neid=262160;
+select count(*) from omc_alarmrec_20171202 where neid=2734686209;
+
+select count(*) from omc_alarmrec_20171202 where neid=2164260865;
+select count(*) from omc_alarmrec_20171202 where neid=2701131777;
+select count(*) from omc_alarmrec_20171202 where neid=2214592513;
+
+select * from omc_neconfig where neno=2164260865;
+select * from omc_neconfig where neno=2701131777;
+select * from omc_neconfig where neno=2214592513;
+
+select distinct(alarmtype) from omc_alarmrec_20171202 where neid=2164260865;
+select distinct(alarmtype) from omc_alarmrec_20171202 where neid=2701131777;
+select distinct(alarmtype) from omc_alarmrec_20171202 where neid=2214592513;
+
+
+select count(*) from omc_alarmrec_20171202 where neid=2701131777;
+
+select count(*) from omc_alarmrec_20171202 where alarmtype=3211266;
+select count(*) from omc_alarmrec_20171202 where alarmtype=65537;
+
++-----------+
+| alarmtype |
++-----------+
+|   3211266 |越限告警
+|     65537 |设备故障
++-----------+
+
+select * from omc_alarminfo where alarmtype=3211266;
+select * from omc_alarminfo where alarmtype=65537;
+
+
+select * from omc_omcconfig where itemno>=4 and itemno<=12;
+
+
++--------+--------------------+
+| ItemNo | ItemValue          |
++--------+--------------------+
+|      4 | 1                  |
+|      5 | 10000              |
+|      6 | 365                |
+|      7 | 10000              |
+|      8 | 365                |
+|      9 | 10000              |
+|     10 | 1                  |
+|     11 |                    |
+|     12 | D:\ics4000\Backup\ |
++--------+--------------------+
+
+omc_alarmrec_20171202
+omc_performancedata_20171202
+
+omc_alarmrec_20171202
+omc_performancedata_20171202
+
+select count(*) from omc_alarmrec_20171202 where status=1; 
+
++------------------------------+
+| Tables_in_ics4000            |
++------------------------------+
+| 告警信息                     |
+| 告警信息历史                 |
+| 当天告警                     |
+| 设备点表范围                 |
+| columns_priv                 |
+| db                           |
+| engine_cost                  |
+| event                        |
+| func                         |
+| general_log                  |
+| gtid_executed                |
+| ha_appconfig                 |
+| help_category                |
+| help_keyword                 |
+| help_relation                |
+| help_topic                   |
+| innodb_index_stats           |
+| innodb_table_stats           |
+| ndb_binlog_index             |
+| omc_alarm_extendconfig       |
+| omc_alarmfilter              |
+| omc_alarminfo                |
+| omc_alarmrec                 |
+| omc_alarmrec_20171202        |
+| omc_alarmrestrain            |
+| omc_appconfig                |
+| omc_heartbeat                |
+| omc_logrec                   |
+| omc_measurekpi               |
+| omc_neconfig                 |
+| omc_omcconfig                |
+| omc_performancedata          |
+| omc_performancedata_20171202 |
+| omc_propertydef              |
+| omc_scopelimit               |
+| omc_signaldef                |
+| omc_signalurl                |
+| omc_user                     |
+| omc_vallimit                 |
+| plugin                       |
+| proc                         |
+| procs_priv                   |
+| proxies_priv                 |
+| server_cost                  |
+| servers                      |
+| slave_master_info            |
+| slave_relay_log_info         |
+| slave_worker_info            |
+| slow_log                     |
+| t_550_zyczp_maste            |
+| tables_priv                  |
+| test                         |
+| test1                        |
+| time_zone                    |
+| time_zone_leap_second        |
+| time_zone_name               |
+| time_zone_transition         |
+| time_zone_transition_type    |
+| user                         |
++------------------------------+
+
+work - 快捷方式
+
+通用信息模型 CIM 开发介绍
+通用信息模型 CIM 开发介绍
+
+
+1146347468
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
